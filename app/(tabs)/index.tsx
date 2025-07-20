@@ -90,6 +90,38 @@ export default function Index() {
 						>
 							{item.text}
 						</Text>
+						<View style={homeStyles.todoActions}>
+							<TouchableOpacity
+								onPress={() => {}}
+								activeOpacity={0.8}
+							>
+								<LinearGradient
+									colors={colors.gradients.warning}
+									style={homeStyles.actionButton}
+								>
+									<Ionicons
+										name="pencil"
+										size={14}
+										color="#fff"
+									/>
+								</LinearGradient>
+							</TouchableOpacity>
+							<TouchableOpacity
+								onPress={() => {}}
+								activeOpacity={0.8}
+							>
+								<LinearGradient
+									colors={colors.gradients.danger}
+									style={homeStyles.actionButton}
+								>
+									<Ionicons
+										name="trash"
+										size={14}
+										color="#fff"
+									/>
+								</LinearGradient>
+							</TouchableOpacity>
+						</View>
 					</View>
 				</LinearGradient>
 			</View>
