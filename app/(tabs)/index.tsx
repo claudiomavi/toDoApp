@@ -37,9 +37,7 @@ export default function Index() {
 			<StatusBar barStyle={colors.statusBarStyle} />
 			<SafeAreaView style={homeStyles.safeArea}>
 				<Header />
-
 				<TodoInput />
-
 				<FlatList
 					data={todos}
 					renderItem={renderTodoItem}
