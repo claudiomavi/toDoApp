@@ -9,29 +9,6 @@ export const createSettingsStyles = (colors: ColorScheme) => {
 		safeArea: {
 			flex: 1,
 		},
-		header: {
-			paddingHorizontal: 24,
-			paddingVertical: 32,
-			paddingBottom: 24,
-		},
-		titleContainer: {
-			flexDirection: 'row',
-			alignItems: 'center',
-		},
-		iconContainer: {
-			width: 56,
-			height: 56,
-			borderRadius: 16,
-			justifyContent: 'center',
-			alignItems: 'center',
-			marginRight: 16,
-		},
-		title: {
-			fontSize: 32,
-			fontWeight: '700',
-			letterSpacing: -1,
-			color: colors.text,
-		},
 		scrollView: {
 			flex: 1,
 		},
@@ -65,38 +42,6 @@ export const createSettingsStyles = (colors: ColorScheme) => {
 			marginBottom: 20,
 			letterSpacing: -0.5,
 			color: colors.danger,
-		},
-		statsContainer: {
-			gap: 16,
-		},
-		statCard: {
-			flexDirection: 'row',
-			alignItems: 'center',
-			padding: 20,
-			borderRadius: 16,
-			borderLeftWidth: 4,
-		},
-		statIconContainer: {
-			marginRight: 16,
-		},
-		statIcon: {
-			width: 40,
-			height: 40,
-			borderRadius: 20,
-			justifyContent: 'center',
-			alignItems: 'center',
-		},
-		statNumber: {
-			fontSize: 28,
-			fontWeight: '800',
-			letterSpacing: -1,
-			color: colors.text,
-		},
-		statLabel: {
-			fontSize: 14,
-			fontWeight: '600',
-			marginTop: 2,
-			color: colors.textMuted,
 		},
 		settingItem: {
 			flexDirection: 'row',
