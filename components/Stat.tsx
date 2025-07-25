@@ -1,4 +1,4 @@
-import { createSettingsStyles } from '@/assets/styles/settings.styles'
+import { createStatsStyles } from '@/assets/styles/stats.styles'
 import useTheme from '@/hooks/useTheme'
 import { Ionicons } from '@expo/vector-icons'
 import { LinearGradient } from 'expo-linear-gradient'
@@ -22,20 +22,20 @@ export default function Stat({
 }: StatProps) {
 	const { colors } = useTheme()
 
-	const settingsStyles = createSettingsStyles(colors)
+	const statsStyles = createStatsStyles(colors)
 
 	return (
 		<LinearGradient
 			colors={colors.gradients.background}
 			style={[
-				settingsStyles.statCard,
+				statsStyles.statCard,
 				{ borderLeftColor: colors[principalColor] },
 			]}
 		>
-			<View style={settingsStyles.statIconContainer}>
+			<View style={statsStyles.statIconContainer}>
 				<LinearGradient
 					colors={colors.gradients[principalColor]}
-					style={settingsStyles.statIcon}
+					style={statsStyles.statIcon}
 				>
 					<Ionicons
 						name={iconName}
@@ -45,8 +45,8 @@ export default function Stat({
 				</LinearGradient>
 			</View>
 			<View>
-				<Text style={settingsStyles.statNumber}>{statNumber}</Text>
-				<Text style={settingsStyles.statLabel}>{statLabel}</Text>
+				<Text style={statsStyles.statNumber}>{statNumber}</Text>
+				<Text style={statsStyles.statLabel}>{statLabel}</Text>
 			</View>
 		</LinearGradient>
 	)
