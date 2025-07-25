@@ -1,6 +1,6 @@
 import { createHomeStyles } from '@/assets/styles/home.styles'
 import EmptyState from '@/components/EmptyState'
-import Header from '@/components/Header'
+import HomeHeader from '@/components/HomeHeader'
 import LoadingSpinner from '@/components/LoadingSpinner'
 import TodoInput from '@/components/TodoInput'
 import TodoItem from '@/components/TodoItem/TodoItem'
@@ -36,7 +36,7 @@ export default function Index() {
 		>
 			<StatusBar barStyle={colors.statusBarStyle} />
 			<SafeAreaView style={homeStyles.safeArea}>
-				<Header />
+				<HomeHeader />
 				<TodoInput />
 				<FlatList
 					data={todos}
